@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context path="/" docBase="currencyExchange"
+   crossContext="true" reloadable="true" debug="1">
+    
+	<resource name="jdbc/currencyexchange" 
+			auth="Container" 
+			type="javax.sql.DataSource"
+			username="root" 
+			password="radixo72"
+			driverClassName="com.mysql.jdbc.Driver"
+			url="jdbc:mysql://localhost:3306/currencyexchange?autoReconnect=true"
+            maxActive="100" maxIdle="30" maxWait="10000"
+            />
+   
+</Context>
