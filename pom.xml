@@ -653,6 +653,11 @@ Irochka (afanasievaiv@ya.ru)
 			<artifactId>tomcat-servlet-api</artifactId>
 			<version>8.0.26</version>
 		</dependency>
+		<dependency>
+			<groupId>org.apache.geronimo.ext.tomcat</groupId>
+			<artifactId>jasper-el</artifactId>
+			<version>7.0.39.2</version>
+		</dependency>
 	</dependencies>
 	
     <build>
