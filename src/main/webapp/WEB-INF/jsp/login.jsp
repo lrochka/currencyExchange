@@ -1,10 +1,14 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/sql" prefix="sql" %>
 <%@ page contentType="text/html; charset=UTF-8" %>
 
 <c:url var="postLoginUrl" value="/j_spring_security_check" />
 
+<sql:query var="rs" dataSource="jdbc/currencyexchange">
+select slogin from userlist
+</sql:query>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
@@ -39,7 +43,11 @@
 			</div>
 		</form>
 		
+		<h2>данные из базы:</h2>
 		
+		<c:forEach var="row" items="${rs.rows}">
+   				 ${row.slogin}<br/>
+		</c:forEach>
 		
 	</body>
 </html>
