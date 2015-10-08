@@ -5,10 +5,10 @@
 	<resource name="jdbc/currencyexchange" 
 			auth="Container" 
 			type="javax.sql.DataSource"
-			username="root" 
-			password="radixo72"
+			username="${OPENSHIFT_MYSQL_DB_USERNAME}" 
+			password="${OPENSHIFT_MYSQL_DB_PASSWORD}"
 			driverClassName="com.mysql.jdbc.Driver"
-			url="jdbc:mysql://localhost:3306/currencyexchange?autoReconnect=true"
+			url="jdbc:mysql://${OPENSHIFT_MYSQL_DB_HOST}:${OPENSHIFT_MYSQL_DB_PORT}/${OPENSHIFT_APP_NAME}?autoReconnect=true"
             maxActive="100" maxIdle="30" maxWait="10000"
             />
    
