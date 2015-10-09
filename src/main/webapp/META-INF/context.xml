@@ -6,7 +6,7 @@
 			auth="Container" 
 			type="javax.sql.DataSource"
 			driverClassName="com.mysql.jdbc.Driver"
-			url="jdbc:mysql://${env.OPENSHIFT_MYSQL_DB_HOST}:${env.OPENSHIFT_MYSQL_DB_PORT}/${env.OPENSHIFT_APP_NAME}?autoReconnect=true"
+			url="jdbc:mysql://${env.OPENSHIFT_MYSQL_DB_HOST}:3306/${env.OPENSHIFT_APP_NAME}?autoReconnect=true"
 			username="${env.OPENSHIFT_MYSQL_DB_USERNAME}"
             password="${env.OPENSHIFT_MYSQL_DB_PASSWORD}"
 			maxActive="100" maxIdle="30" maxWait="10000"
