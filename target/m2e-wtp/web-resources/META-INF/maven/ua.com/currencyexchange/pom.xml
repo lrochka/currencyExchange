@@ -611,6 +611,11 @@ Irochka (afanasievaiv@ya.ru)
 			<artifactId>hibernate-validator</artifactId>
 			<version>4.2.0.Final</version>
 		</dependency>
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-c3p0</artifactId>
+			<version>4.0.1.Final</version>
+		</dependency>
 			
 		<dependency>
 			<groupId>cglib</groupId>
@@ -629,11 +634,6 @@ Irochka (afanasievaiv@ya.ru)
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
 			<version>5.1.36</version>
-		</dependency>
-		<dependency>
-			<groupId>com.mysql.jdbc</groupId>
-			<artifactId>com.springsource.com.mysql.jdbc</artifactId>
-			<version>5.1.6</version>
 		</dependency>
 		<dependency>
 			<groupId>org.kie.modules</groupId>
@@ -657,7 +657,6 @@ Irochka (afanasievaiv@ya.ru)
 			<groupId>org.apache.geronimo.ext.tomcat</groupId>
 			<artifactId>jasper-el</artifactId>
 			<version>7.0.39.2</version>
-			<type>bundle</type>
 		</dependency>
 	</dependencies>
 	
@@ -847,4 +846,23 @@ Irochka (afanasievaiv@ya.ru)
 		
 		
     </repositories>
+    
+    <profiles>
+    <profile>
+        <id>openshift</id>
+        <build>
+            <finalName>currencyExchange</finalName>
+            <plugins>
+                <plugin>
+                    <artifactId>maven-war-plugin</artifactId>
+                    <version>2.1.1</version>
+                    <configuration>
+                        <outputDirectory>webapps</outputDirectory>
+                        <warName>ROOT</warName>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </build>
+    </profile>
+	</profiles>
 </project>
