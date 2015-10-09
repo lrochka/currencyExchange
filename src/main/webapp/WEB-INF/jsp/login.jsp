@@ -6,15 +6,6 @@
 
 <c:url var="postLoginUrl" value="/j_spring_security_check" />
 
-<sql:setDataSource      
-     driver="com.mysql.jdbc.Driver"
-     url="jdbc:mysql://127.8.237.2:3306/currencyexchange?autoReconnect=true"         
-     user="adminc5aiLd5" 
-     password="bcHxwMCKLpJ4"
-     var="dSource"/>   
-     
-<sql:query var="rs" dataSource="${dSource}">select slogin from userlist</sql:query>
-
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
 		<title>Пожалуйста войдите</title>
@@ -47,12 +38,6 @@
 				</div>
 			</div>
 		</form>
-		
-		<h2>данные из базы:</h2>
-		
-		<c:forEach var="row" items="${rs.rows}">
-   				 ${row.slogin}<br/>
-		</c:forEach>
 		
 	</body>
 </html>
