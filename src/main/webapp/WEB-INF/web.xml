@@ -115,5 +115,10 @@
       <res-type>javax.sql.DataSource</res-type>
       <res-auth>Container</res-auth>
   	</resource-ref>
+	
+	<system-properties>
+		<property name="org.apache.catalina.connector.URI_ENCODING" value="UTF-8"/>
+		<property name="org.apache.catalina.connector.USE_BODY_ENCODING_FOR_QUERY_STRING" value="true"/>
+	</system-properties>
   	
 </web-app>
