@@ -6,7 +6,7 @@
 			auth="Container" 
 			type="javax.sql.DataSource"
 			driverClassName="com.mysql.jdbc.Driver"
-			url="jdbc:mysql://127.8.237.2:3306/currencyexchange?autoReconnect=true;useEncoding=true;characterEncoding=UTF-8"
+			url="jdbc:mysql://127.8.237.2:3306/currencyexchange?autoReconnect=true;useEncoding=true;characterEncoding=UTF-8;character_set_client=UTF-8;character_set_results=UTF-8;character_set_connection=UTF-8"
 			username="adminc5aiLd5"
             password="bcHxwMCKLpJ4"
 			maxActive="100" maxIdle="30" maxWait="10000"
