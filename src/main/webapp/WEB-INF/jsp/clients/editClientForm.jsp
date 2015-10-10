@@ -16,6 +16,7 @@
 	<head>
 		<title><spring:message code="editUser.pageTitle" /></title>
 		<link rel="stylesheet" type="text/css" href="${forumsCssUrl}" />
+		<meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />
 	</head>
 	<body>
 		<ul id="breadcrumbs">
