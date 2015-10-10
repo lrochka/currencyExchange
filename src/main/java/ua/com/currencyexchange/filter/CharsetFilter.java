@@ -30,13 +30,13 @@ public class CharsetFilter implements Filter
   // Respect the client-specified character encoding
     // (see HTTP specification section 3.4.1)
     //if(null == request.getCharacterEncoding())
-  request.setCharacterEncoding("UTF-8");
+  request.setCharacterEncoding("UTF_8");
   //request.setContentType("text/html; charset=UTF-8");
     /**
     * Set the default response content type and encoding
    */
   response.setContentType("text/html; charset=UTF-8");
-  response.setCharacterEncoding("UTF-8");
+  response.setCharacterEncoding("UTF_8");
   next.doFilter(request, response);
  }
  
