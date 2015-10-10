@@ -18,7 +18,7 @@ public class CharsetFilter implements Filter
  
  public void init(FilterConfig config) throws ServletException
  {
-  encoding = config.getInitParameter("requestEncoding");
+  encoding = config.getInitParameter("encoding");
  
   if( encoding==null ) encoding="UTF-8";
  }
