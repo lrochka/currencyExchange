@@ -7,11 +7,10 @@
  */
 package ua.com.currencyexchange.filter;
 
-import java.io.IOException;
-import javax.servlet.FilterChain;
-import javax.servlet.ServletException;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import java.io.*;
+import javax.servlet.*;
+import javax.servlet.http.*;
+import java.util.*;
  
 public class CharsetFilter implements Filter
 {
@@ -19,7 +18,7 @@ public class CharsetFilter implements Filter
  
  public void init(FilterConfig config) throws ServletException
  {
-  encoding = config.getInitParameter("encoding");
+  encoding = config.getInitParameter("requestEncoding");
  
   if( encoding==null ) encoding="UTF-8";
  }
@@ -28,7 +27,6 @@ public class CharsetFilter implements Filter
  	ServletResponse response, FilterChain next)
  throws IOException, ServletException
  {
-  
   request.setCharacterEncoding("UTF-8");
   response.setContentType("text/html; charset=UTF-8");
   response.setCharacterEncoding("UTF-8");
