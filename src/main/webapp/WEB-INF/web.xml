@@ -6,12 +6,6 @@
 	<!-- The definition of the Root Spring Container shared by all Servlets and Filters -->
 	
 	<context-param>
-		<param-name>encoding</param-name>
-		<param-value>
-			classpath:org.springframework.web.filter.CharacterEncodingFilter
-		</param-value>
-	</context-param>
-	<context-param>
 		<param-name>contextConfigLocation</param-name>
 		<param-value>
 			classpath:/spring/beans-data.xml
@@ -25,7 +19,7 @@
 		<param-value>Currency Exchange</param-value>
 	</context-param>
 	<context-param>
-		<param-name>PARAMETER_ENCODING</param-name>
+		<param-name>encoding</param-name>
 		<param-value>UTF-8</param-value>
 	</context-param>
 		
