@@ -119,7 +119,7 @@ public class ClientController {
 		return "clients/editClientForm";
 	}
 
-	@RequestMapping(value = "/clients/{phone}/edit", method = RequestMethod.POST, produces = "text/plain;charset=UTF-8")
+	@RequestMapping(value = "/clients/{phone}/edit", method = RequestMethod.POST)
 	public String putClient(
 			@PathVariable("phone") String username,
 			@ModelAttribute("client") @Valid ClientForm client,
