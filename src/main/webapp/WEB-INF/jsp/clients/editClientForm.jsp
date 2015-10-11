@@ -19,6 +19,14 @@
 		<meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />
 	</head>
 	<body>
+		<%
+			request.setCharacterEncoding("UTF-8");
+            String name = request.getParameter("name");
+            if (name == null || name.length() == 0) {
+                name = "World";
+            }
+        %>
+        Hello, <%= name %>! <br>
 		<ul id="breadcrumbs">
 			<li><a href="${homeUrl}">Главная</a></li>
 			<li><a href="${clientsUrl}">Клиенты</a></li>
