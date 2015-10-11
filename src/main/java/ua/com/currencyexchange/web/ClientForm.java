@@ -3,6 +3,8 @@
  */
 package ua.com.currencyexchange.web;
 
+import java.net.URLDecoder;
+
 import javax.validation.constraints.Digits;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.NotNull;
@@ -33,7 +35,7 @@ public class ClientForm {
 	@Size(min = 1, max = 50, message = "Не может быть меньше 1 символа")
 	public String getName() { return name; }
 
-	public void setName(String name) { this.name = name; }
+	public void setName(String name) throws UnsupportedEncodingException { this.name = URLDecoder.decode(name, "UTF-8"); }
 
 	@NotNull
 	@Size(min = 10, max = 10, message = "Необходимо ровно 10 цифр!")
