@@ -8,6 +8,9 @@ import com.opensymphony.sitemesh.DecoratorSelector;
 import com.opensymphony.sitemesh.ContentProcessor;
 import com.opensymphony.sitemesh.compatability.DecoratorMapper2DecoratorSelector;
 import com.opensymphony.sitemesh.compatability.PageParser2ContentProcessor;
+import com.opensymphony.sitemesh.webapp.ContainerTweaks;
+import com.opensymphony.sitemesh.webapp.ContentBufferingResponse;
+import com.opensymphony.sitemesh.webapp.SiteMeshWebAppContext;
 
 import javax.servlet.*;
 import javax.servlet.http.HttpServletRequest;
