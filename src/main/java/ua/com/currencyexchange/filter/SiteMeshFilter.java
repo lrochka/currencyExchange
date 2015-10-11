@@ -1,4 +1,4 @@
-package ua.com.currencyexchange.filter;
+package ua.com.curex.filter;
 
 import com.opensymphony.module.sitemesh.Config;
 import com.opensymphony.module.sitemesh.Factory;
@@ -135,7 +135,9 @@ public class SiteMeshFilter implements Filter {
     private Content obtainContent(ContentProcessor contentProcessor, SiteMeshWebAppContext webAppContext,
                                   HttpServletRequest request, HttpServletResponse response, FilterChain chain)
             throws IOException, ServletException {
-
+    	request.setCharacterEncoding("UTF-8");
+		response.setContentType("text/html; charset=UTF-8");
+		response.setCharacterEncoding("UTF-8");
         ContentBufferingResponse contentBufferingResponse = new ContentBufferingResponse(response, contentProcessor, webAppContext);
         chain.doFilter(request, contentBufferingResponse);
         // TODO: check if another servlet or filter put a page object in the request
@@ -149,6 +151,7 @@ public class SiteMeshFilter implements Filter {
     }
 
     private boolean filterAlreadyAppliedForRequest(HttpServletRequest request) {
+    	
         if (request.getAttribute(ALREADY_APPLIED_KEY) == Boolean.TRUE) {
             return true;
         } else {
