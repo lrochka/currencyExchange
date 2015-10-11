@@ -35,17 +35,10 @@
 		<script type="text/javascript" src="${jqueryTablesorterJsUrl}"></script>
 		<script type="text/javascript" src="${sipJsUrl}"></script>
 		<script type="text/javascript" src="${listJsUrl}"></script>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<decorator:head />
 	</head>
 	<body>
-		<%
-			
-            String name = request.getParameter("name");
-            if (name == null || name.length() == 0) {
-                name = "World";
-            }
-        %>
-        
 		<div id="doc3">
 			<div id="outerHdSubhd">
 				<div id="innerHdSubhd">
@@ -84,7 +77,6 @@
 				</div>
 				</div>
 				<div id ="contentCol">
-					Hello, <%= name %>! <br>
 					<div id = "system-main" class="regionInner">
 						<decorator:body />
 					</div>
