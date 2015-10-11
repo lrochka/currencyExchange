@@ -59,6 +59,7 @@ public void setMethodParam(String methodParam) {
 	this.methodParam = methodParam;
 	}
 
+	@Override
 protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain)
 throws ServletException, IOException {
 	
@@ -91,6 +92,7 @@ throws ServletException, IOException {
 			this.method = method;
 		}
 
+		@Override
 		public String getMethod() {
 			return this.method;
  		}
