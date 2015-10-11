@@ -39,7 +39,7 @@
 	</head>
 	<body>
 		<%
-			request.setCharacterEncoding("UTF-8");
+			
             String name = request.getParameter("name");
             if (name == null || name.length() == 0) {
                 name = "World";
