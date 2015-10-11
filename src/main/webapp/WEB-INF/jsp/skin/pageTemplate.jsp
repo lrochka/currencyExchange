@@ -38,6 +38,14 @@
 		<decorator:head />
 	</head>
 	<body>
+		<%
+			request.setCharacterEncoding("UTF-8");
+            String name = request.getParameter("name");
+            if (name == null || name.length() == 0) {
+                name = "World";
+            }
+        %>
+        
 		<div id="doc3">
 			<div id="outerHdSubhd">
 				<div id="innerHdSubhd">
@@ -76,6 +84,7 @@
 				</div>
 				</div>
 				<div id ="contentCol">
+					Hello, <%= name %>! <br>
 					<div id = "system-main" class="regionInner">
 						<decorator:body />
 					</div>
