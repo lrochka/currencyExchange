@@ -35,7 +35,7 @@ public class ClientForm {
 	@Size(min = 1, max = 50, message = "Не может быть меньше 1 символа")
 	public String getName() { return name; }
 
-	public void setName(String name) { this.name = URLDecoder.decode(name, "UTF-8"); }
+	public void setName(String name) throws Exception { this.name = URLDecoder.decode(name, "UTF-8"); }
 
 	@NotNull
 	@Size(min = 10, max = 10, message = "Необходимо ровно 10 цифр!")
