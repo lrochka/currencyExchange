@@ -14,6 +14,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 import org.apache.commons.lang.builder.ToStringStyle;
 import org.hibernate.validator.constraints.ScriptAssert;
 
+import ua.com.curex.filter.RepairWrongUrlParamEncoding;
+
 /**
  * @author Irochka (afanasievaiv@ya.ru)
  */
