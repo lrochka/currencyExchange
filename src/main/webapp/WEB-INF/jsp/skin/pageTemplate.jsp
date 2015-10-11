@@ -39,6 +39,8 @@
 		<decorator:head />
 	</head>
 	<body>
+		<% request.setCharacterEncoding("UTF-8");
+		%>
 		<div id="doc3">
 			<div id="outerHdSubhd">
 				<div id="innerHdSubhd">
