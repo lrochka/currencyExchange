@@ -122,8 +122,8 @@
 	
 	<locale-encoding-mapping-list>
 		<locale-encoding-mapping>
-			<locale>uk_UA</locale>
-			<encoding>UTF-8</encoding>
+			<locale>uk</locale>
+			<encoding>uk_UA</encoding>
 		</locale-encoding-mapping>
 	</locale-encoding-mapping-list>
   	
