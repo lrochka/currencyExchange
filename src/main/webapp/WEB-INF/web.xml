@@ -27,7 +27,7 @@
 	<listener>
 		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
 	</listener>
-	
+	<!--
     <filter>
         <filter-name>setCharacterEncodingFilter</filter-name>
         <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
@@ -72,7 +72,6 @@
 		<url-pattern>/*</url-pattern>
 	</filter-mapping>
 	
-	<!-- By putting the security filter first, the Sitemesh skin will see security info (e.g. in the subhead). -->
 	<filter-mapping>
 		<filter-name>specialFilterChainProxy</filter-name>
 		<url-pattern>/*</url-pattern>
@@ -83,8 +82,6 @@
 		<url-pattern>/*</url-pattern>
 		<dispatcher>FORWARD</dispatcher>
 	</filter-mapping>
-	
-	<!-- Processes application requests -->
 	
 	<filter-mapping>
 		<filter-name>springSecurityFilterChain</filter-name>
@@ -115,7 +112,7 @@
 		<servlet-name>spring</servlet-name>
 		<url-pattern>/</url-pattern>
 	</servlet-mapping>
-	
+	-->
 	<resource-ref>
       <description>Connection Pool</description>
       <res-ref-name>jdbc/currencyexchange</res-ref-name>
