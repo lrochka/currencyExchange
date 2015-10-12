@@ -134,7 +134,7 @@ public class ClientController {
 
 		try{
 		clientO.setName(new String(client.getName().getBytes("UTF-8"),"UTF-8"));
-		}catch(UnsupportedEncodingException e){
+		}catch(Exception e){
 			model.addAttribute("error", e.getMessage());
 			return "accessdenied";
 		}
