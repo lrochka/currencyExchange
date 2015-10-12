@@ -26,6 +26,10 @@ Irochka (afanasievaiv@ya.ru)
 	
 	<bean class="org.springframework.jdbc.core.JdbcTemplate" p:dataSource-ref="dataSource" />
 	
+	<bean id="localeResolver" class="org.springframework.web.servlet.i18n.SessionLocaleResolver">
+		<property name="defaultLocale" value="uk_UA" />
+	</bean>
+	
 	<util:properties id="hibernateProperties">
 		<prop key="hibernate.dialect">org.hibernate.dialect.MySQL5InnoDBDialect</prop>
 		<prop key="hibernate.connection.CharSet">utf8</prop>
