@@ -120,5 +120,11 @@
       <res-auth>Container</res-auth>
   	</resource-ref>
 	
+	<locale-encoding-mapping-list>
+		<locale-encoding-mapping>
+			<locale>uk_UA</locale>
+			<encoding>UTF-8</encoding>
+		</locale-encoding-mapping>
+	</locale-encoding-mapping-list>
   	
 </web-app>
