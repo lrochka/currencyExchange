@@ -32,14 +32,14 @@
 			<div class="info alert">Клиент сохранен! <a href="${clientUrl}">Просмотр</a></div>
 		</c:if>
 		
-		<form:form cssClass="main" modelAttribute="client" >
+		<form:form cssClass="main" modelAttribute="client" accept-charset="utf-8">
 			<input type="hidden" name="_method" value="POST" />
 			
 			<div class="panel grid">
 				<div class="gridRow yui-gf">
 					<div class="fieldLabel yui-u first">Имя:</div>
 					<div class="yui-u">
-						<div><form:input path="name" cssClass="medium" cssErrorClass="medium error" /></div>
+						<div><form:input path="name" cssClass="medium" cssErrorClass="medium error" accept-charset="utf-8"/></div>
 						<div class="errorMessage"><form:errors path="name" htmlEscape="false" /></div>
 					</div>
 				</div>

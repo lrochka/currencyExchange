@@ -27,7 +27,7 @@
 	<listener>
 		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
 	</listener>
-	<!--
+	
     <filter>
         <filter-name>setCharacterEncodingFilter</filter-name>
         <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
@@ -40,7 +40,7 @@
             <param-value>true</param-value>
         </init-param>
     </filter>
-	-->
+	
  	<filter>
 		<filter-name>sitemesh</filter-name>
 		<filter-class>com.opensymphony.sitemesh.webapp.SiteMeshFilter</filter-class>
@@ -61,12 +61,12 @@
 		<filter-name>specialFilterChainProxy</filter-name>
 		<filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
 	</filter>
-	<!--
+	
 	<filter-mapping>
     	<filter-name>setCharacterEncodingFilter</filter-name>
     	<url-pattern>/*</url-pattern>
   	</filter-mapping>
-	-->
+	
 	<filter-mapping>
 		<filter-name>httpMethodFilter</filter-name>
 		<url-pattern>/*</url-pattern>

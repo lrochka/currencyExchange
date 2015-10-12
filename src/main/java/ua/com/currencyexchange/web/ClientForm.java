@@ -14,8 +14,6 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 import org.apache.commons.lang.builder.ToStringStyle;
 import org.hibernate.validator.constraints.ScriptAssert;
 
-import ua.com.curex.filter.RepairWrongUrlParamEncoding;
-
 /**
  * @author Irochka (afanasievaiv@ya.ru)
  */
@@ -37,7 +35,7 @@ public class ClientForm {
 	@Size(min = 1, max = 50, message = "Не может быть меньше 1 символа")
 	public String getName() { return name; }
 
-	public void setName(String name) throws Exception { this.name = RepairWrongUrlParamEncoding.repair(name); }
+	public void setName(String name) { this.name = name; }
 
 	@NotNull
 	@Size(min = 10, max = 10, message = "Необходимо ровно 10 цифр!")

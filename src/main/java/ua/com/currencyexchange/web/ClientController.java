@@ -96,13 +96,7 @@ public class ClientController {
 		ClientForm clientf = new ClientForm();
 		
 		clientf.setCompany(client.getCompany().getId());
-		try{
 		clientf.setName(client.getName());
-		}catch(Exception e)
-		{
-			model.addAttribute("error", e.getMessage());
-			return "accessdenied";
-		}
 		clientf.setPhone(client.getPhone());
 		clientf.setAddContact(client.getAddContact());
 		
