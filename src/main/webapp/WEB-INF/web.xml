@@ -64,8 +64,7 @@
 	
 	<filter-mapping>
     	<filter-name>setCharacterEncodingFilter</filter-name>
-		<is-match-after>false<is-match-after>
-    	<url-pattern>/*</url-pattern>
+		<url-pattern>/*</url-pattern>
   	</filter-mapping>
 	
 	<filter-mapping>
