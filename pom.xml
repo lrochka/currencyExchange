@@ -75,7 +75,7 @@ Irochka (afanasievaiv@ya.ru)
 		</dependency>
 		<dependency>
 			<groupId>javax.servlet</groupId>
-			<artifactId>javax.servlet</artifactId>
+			<artifactId>com.springsource.javax.servlet</artifactId>
 			<version>3.0.1</version>
 		</dependency>
 		<dependency>
@@ -465,7 +465,7 @@ Irochka (afanasievaiv@ya.ru)
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>servlet-api</artifactId>
-			<version>2.5</version>
+			<version>3.0</version>
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
