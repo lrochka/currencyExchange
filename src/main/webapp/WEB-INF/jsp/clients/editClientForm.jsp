@@ -18,6 +18,9 @@
 		<link rel="stylesheet" type="text/css" href="${forumsCssUrl}" />
 		<meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />
 	</head>
+	<% request.setCharacterEncoding("UTF-8");
+		response.setContentType( "text/html; charset=utf-8" ); 
+		response.setCharacterEncoding("UTF-8");%>	
 	<body>
 		
 		<ul id="breadcrumbs">
