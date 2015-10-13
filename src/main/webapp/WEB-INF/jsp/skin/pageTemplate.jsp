@@ -38,9 +38,10 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<decorator:head />
 	</head>
+	<% request.setCharacterEncoding("UTF-8");
+		response.setContentType( "text/html; charset=utf-8" ); 
+		response.setCharacterEncoding("UTF-8");%>	
 	<body>
-		<% request.setCharacterEncoding("UTF-8");
-		%>
 		<div id="doc3">
 			<div id="outerHdSubhd">
 				<div id="innerHdSubhd">

@@ -132,12 +132,7 @@ public class ClientController {
 		
 		Client clientO = clientService.getClientByPhone(client.getPhone());
 
-		try{
-		clientO.setName(new String(client.getName().getBytes("UTF-8"),"UTF-8"));
-		}catch(Exception e){
-			model.addAttribute("error", e.getMessage());
-			return "accessdenied";
-		}
+		clientO.setName(client.getName());
 		clientO.setCompany(this.companyService.getCompanyById(client.getCompany()));
 		clientO.setAddContact(client.getAddContact());
 		clientO.setAuthor(((UserDetailsAdapter) authn.getPrincipal()).getAccount());
