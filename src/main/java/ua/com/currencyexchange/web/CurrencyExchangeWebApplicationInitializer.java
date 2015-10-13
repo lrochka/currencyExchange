@@ -23,7 +23,5 @@ public class CurrencyExchangeWebApplicationInitializer implements WebApplication
 		charsetFilter.setInitParameter("encoding", "UTF-8");
 		charsetFilter.setInitParameter("forceEncoding", "true");
 		charsetFilter.addMappingForUrlPatterns(null, false, "/*");
-		
-        super.onStartup(servletContext);
     }
 }
