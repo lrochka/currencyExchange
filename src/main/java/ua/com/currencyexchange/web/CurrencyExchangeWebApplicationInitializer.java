@@ -17,8 +17,7 @@ public class CurrencyExchangeWebApplicationInitializer implements WebApplication
 
     @Override
     public void onStartup(ServletContext servletContext) throws ServletException {
-        setActiveProfile();
-        
+    	
 		charsetFilter = servletContext.addFilter("setCharacterEncodingFilter",
 				new CharacterEncodingFilter());
 		charsetFilter.setInitParameter("encoding", "UTF-8");
