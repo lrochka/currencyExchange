@@ -11,6 +11,8 @@ import java.io.*;
 import javax.servlet.*;
 import javax.servlet.http.*;
 import java.util.*;
+
+import org.springframework.http.HttpHeaders;
  
 public class CharsetFilter implements Filter
 {
@@ -27,11 +29,15 @@ public class CharsetFilter implements Filter
  	ServletResponse response, FilterChain next)
  throws IOException, ServletException
  {
-  request.setHeader("Accept-Encoding", "UTF-8");
-  request.setCharacterEncoding("UTF-8");
-  response.setContentType("text/html; charset=UTF-8");
-  response.setCharacterEncoding("UTF-8");
-  next.doFilter(request, response);
+	 request.setCharacterEncoding("UTF-8");
+	 response.setContentType("text/html; charset=UTF-8");
+	 response.setCharacterEncoding("UTF-8");
+  
+	 HttpServletRequest req = (HttpServletRequest) request;
+	 HttpServletResponse res = (HttpServletResponse) response;
+	 HttpHeaders requestHeaders = new HttpHeaders();
+	 res.setHeader("Accept-Encoding", "utf-8");
+  next.doFilter(req, res);
  }
  
  public void destroy(){}
