@@ -47,6 +47,4 @@ Irochka (afanasievaiv@ya.ru)
 	<bean id="messageSource"
 		class="org.springframework.context.support.ReloadableResourceBundleMessageSource"
 		p:basename="classpath:/spring/messages" />
-	
-	<bean class = "ua.com.currencyexchange.filter.EncodingPostProcessor " />
 </beans>
