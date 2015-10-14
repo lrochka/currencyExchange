@@ -32,8 +32,8 @@
 			<div class="info alert">Клиент сохранен! <a href="${clientUrl}">Просмотр</a></div>
 		</c:if>
 		
-		<form:form cssClass="main" modelAttribute="client" accept-charset="UTF-8">
-			<input type="hidden" name="_method" value="POST" accept-charset="UTF-8"/>
+		<form:form cssClass="main" modelAttribute="client" acceptCharset="UTF-8">
+			<input type="hidden" name="_method" value="POST" />
 			
 			<div class="panel grid">
 				<div class="gridRow yui-gf">
