@@ -11,7 +11,7 @@ import javax.servlet.ServletException;
 import javax.servlet.ServletRegistration;
 
 import org.springframework.web.WebApplicationInitializer;
-import org.springframework.web.filter.CharacterEncodingFilter;
+import ua.com.currencyexchange.filter.CharsetFilter;
 
 public class CurrencyExchangeWebApplicationInitializer implements WebApplicationInitializer {
 
@@ -19,9 +19,8 @@ public class CurrencyExchangeWebApplicationInitializer implements WebApplication
     public void onStartup(ServletContext servletContext) throws ServletException {
     	
         FilterRegistration.Dynamic charsetFilter = servletContext.addFilter("setCharacterEncodingFilter",
-				new CharacterEncodingFilter());
+				new CharsetFilter());
 		charsetFilter.setInitParameter("encoding", "UTF-8");
-		charsetFilter.setInitParameter("forceEncoding", "true");
 		charsetFilter.addMappingForUrlPatterns(null, false, "/*");
 		
     }
