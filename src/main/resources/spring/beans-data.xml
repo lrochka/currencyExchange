@@ -32,8 +32,8 @@ Irochka (afanasievaiv@ya.ru)
 	
 	<util:properties id="hibernateProperties">
 		<prop key="hibernate.dialect">org.hibernate.dialect.MySQL5InnoDBDialect</prop>
-		<prop key="hibernate.connection.CharSet">utf8</prop>
-		<prop key="hibernate.connection.characterEncoding">utf8</prop>
+		<prop key="hibernate.connection.CharSet">UTF-8</prop>
+		<prop key="hibernate.connection.characterEncoding">UTF-8</prop>
 		<prop key="hibernate.connection.useUnicode">true</prop>
 		<prop key="hibernate.show_sql">false</prop>
 	</util:properties>
