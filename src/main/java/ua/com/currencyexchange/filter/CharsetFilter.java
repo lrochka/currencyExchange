@@ -35,7 +35,7 @@ public class CharsetFilter implements Filter
   
 	 HttpServletRequest req = (HttpServletRequest) request;
 	 HttpServletResponse res = (HttpServletResponse) response;
-	 HttpHeaders requestHeaders = new HttpHeaders();
+	 req.setHeader("Accept-Encoding", "utf-8");
 	 res.setHeader("Accept-Encoding", "utf-8");
   next.doFilter(req, res);
  }
