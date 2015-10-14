@@ -37,7 +37,8 @@ public class CharsetFilter implements Filter
 	 //HttpServletResponse res = (HttpServletResponse) response;
 	 
 	 //res.setHeader("Accept-Encoding", "UTF-8");
-  next.doFilter(req, res);
+	//next.doFilter(req, res);
+	next.doFilter(request, response);
  }
  
  public void destroy(){}
