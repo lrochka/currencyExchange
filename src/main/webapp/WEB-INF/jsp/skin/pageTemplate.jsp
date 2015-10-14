@@ -6,7 +6,7 @@
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
-<%@ page contentType="text/html; charset=UTF-8" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 
 <c:set var="baseGoogleUrl" value="http://ajax.googleapis.com/ajax/libs" />
 
@@ -35,7 +35,7 @@
 		<script type="text/javascript" src="${jqueryTablesorterJsUrl}"></script>
 		<script type="text/javascript" src="${sipJsUrl}"></script>
 		<script type="text/javascript" src="${listJsUrl}"></script>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" >
 		<decorator:head />
 	</head>
 	<body>

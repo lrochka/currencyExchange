@@ -6,7 +6,7 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 <%@ include file="/WEB-INF/jsp/urls.jspf" %>
-<%@ page pageEncoding="UTF-8" contentType="text/html; charset=UTF-8" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 
 <c:url var="clientUrl" value="/clients/${client.phone}.html" />
 
@@ -16,7 +16,7 @@
 	<head>
 		<title><spring:message code="editUser.pageTitle" /></title>
 		<link rel="stylesheet" type="text/css" href="${forumsCssUrl}" />
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" >
 	</head>
 	<body>
 		
