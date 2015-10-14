@@ -13,7 +13,7 @@
 	<body>
 		<h1>Пожалуйста войдите</h1>
 		
-		<form class="main" action="${postLoginUrl}" method="post">
+		<form class="main" action="${postLoginUrl}" method="post" accept-charset="UTF-8">
 			<c:if test="${param.failed == true}">
 				<div class="warning alert">
 					Попытка войти не удалась. Пожалуйста, попробуйте еще раз или обратитесь к технической поддержке за помощью. 
