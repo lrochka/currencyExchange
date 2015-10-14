@@ -39,7 +39,7 @@ public class CharsetFilter implements Filter
 	 req.setCharacterEncoding("UTF-8");
 	 res.setCharacterEncoding("UTF-8");
   
-	 res.setHeader("Accept-Encoding", "UTF-8");
+	 //res.setHeader("Accept-Encoding", "UTF-8");
 	 next.doFilter(req, res);
 	//next.doFilter(request, response);
  }
