@@ -34,7 +34,7 @@ public class EncodingPostProcessor implements BeanPostProcessor {
             for (HttpMessageConverter<?> conv: convs) {
                 if (conv instanceof StringHttpMessageConverter) {
                     ((StringHttpMessageConverter) conv).setSupportedMediaTypes(
-                        Arrays.asList(new MediaType("text", "html", 
+                        Arrays.asList(new MediaType("text", "plain", 
                             Charset.forName("UTF-8"))));
                 }
             }

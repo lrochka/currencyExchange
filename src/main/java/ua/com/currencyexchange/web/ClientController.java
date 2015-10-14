@@ -70,7 +70,7 @@ public class ClientController {
 		return "clients/client";
 	}
 	
-	@RequestMapping(value = "/clients/{phone}/edit", method = RequestMethod.GET)
+	@RequestMapping(value = "/clients/{phone}/edit", method = RequestMethod.GET, produces = "text/plain; charset=UTF-8")
 	public String getEditClientForm(
 			@PathVariable("phone") String phone,
 			Model model) {
