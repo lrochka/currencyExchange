@@ -33,10 +33,10 @@ public class CharsetFilter implements Filter
 	 //response.setContentType("text/html; charset=UTF-8");
 	 response.setCharacterEncoding("UTF-8");
   
-	 HttpServletRequest req = (HttpServletRequest) request;
-	 HttpServletResponse res = (HttpServletResponse) response;
+	 //HttpServletRequest req = (HttpServletRequest) request;
+	 //HttpServletResponse res = (HttpServletResponse) response;
 	 
-	 res.setHeader("Accept-Encoding", "UTF-8");
+	 //res.setHeader("Accept-Encoding", "UTF-8");
   next.doFilter(req, res);
  }
  
