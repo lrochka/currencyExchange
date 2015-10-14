@@ -41,4 +41,15 @@ Irochka (afanasievaiv@ya.ru)
 	<bean id="messageSource"
 		class="org.springframework.context.support.ReloadableResourceBundleMessageSource"
 		p:basename="classpath:/spring/messages" />
+	
+	<bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter">
+        <property name="messageConverters">
+            <util:list>
+                <bean id="stringHttpMessageConverter"
+                      class="ua.com.currencyexchange.filter.ConfigurableStringHttpMessageConverter">
+                    <constructor-arg value="UTF-8"/>
+                </bean>
+            </util:list>
+        </property>
+    </bean>
 </beans>
