@@ -1,6 +1,6 @@
 /* Themes: http://kuler.adobe.com/#themeID/1404559 */
 @import url(http://fonts.googleapis.com/css?family=Mako);
-
+@charset "utf-8";
 html {
 	min-width: 900px;
 	background-color: #7C868A;
