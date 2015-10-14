@@ -113,7 +113,7 @@ public class ClientController {
 		return "clients/editClientForm";
 	}
 
-	@RequestMapping(value = "/clients/{phone}/edit", method = RequestMethod.POST, produces = "text/plain; charset=UTF-8")
+	@RequestMapping(value = "/clients/{phone}/edit", method = RequestMethod.POST)
 	public String putClient(
 			@PathVariable("phone") String username,
 			@ModelAttribute("client") @Valid ClientForm client,
@@ -151,7 +151,7 @@ public class ClientController {
 		return  "redirect:/clients/{phone}.html?saved=true";
 	}
 	
-	@RequestMapping(value = "/clients/new/post", method = RequestMethod.GET)
+	@RequestMapping(value = "/clients/new/post", method = RequestMethod.GET, produces = "text/plain; charset=UTF-8")
 	public String getRegistrationForm(Model model) {
 		model.addAttribute("client", new ClientForm());
 		model.addAttribute("companyList", this.companyService.getCompanyList());
