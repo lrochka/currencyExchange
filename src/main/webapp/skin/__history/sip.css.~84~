@@ -517,11 +517,6 @@ ul.actionBar a {
 .icon.accept { background-image: url(icons/accept.png); }
 .icon.add { background-image: url(icons/add.png); }
 .icon.cancel { background-image: url(icons/cancel.png); }
-.icon.cln { background-image: url(icons/cln.png);}
-.icon.clnArrow{ background-image: url(icons/cln_arrow.png);}
-.icon.clnExclamation{ background-image: url(icons/cln_exclamation.png);}
-.icon.clnPencil{ background-image: url(icons/cln_pencil.png);}
-.icon.clnPlus { background-image: url(icons/cln_plus.png);}
 .icon.commentAdd { background-image: url(icons/comment_add.png); }
 .icon.commentDelete { background-image: url(icons/comment_delete.png); }
 .icon.commentEdit { background-image: url(icons/comment_edit.png); }
@@ -564,7 +559,7 @@ ul.actionBar a {
 	display:block;
 	float:left;
 	position:relative;
-	font-size: 80%;
+	width:250px;
 	height:100%;
 }.hasLeftCol 
 
@@ -600,22 +595,3 @@ ul.actionBar a {
 	font-family: Mako, sans-serif;
 	font-size: 116%;
 }
-
-/* editor ================================================================ */
-#content fieldset.column { display: block; height: 100%; width: 50%; }
-
-#content .window { width: 100%; border: 1px solid #C0C0C0; box-shadow: inset 0 1px 2px #e4e4e4; }
-
-#content .top { height: 25%; position: absolute; top: -6px; }
-
-#content .bottom { height: 75%; position: absolute; bottom: -6px; }
-
-#content .right { position: absolute; right: -5px; }
-
-#content .left { position: absolute; left: -5px; }
-
-#handler_vertical { width: 8px; height: 100%; padding: 5px 0; cursor: col-resize; position: absolute; top: -5px; left: 0; background: url(../img/handle-v.png) 3px 50% no-repeat; }
-
-.handler_horizontal { width: 100%; height: 8px; padding: 0 1px; cursor: row-resize; position: absolute; top: 0; left: 0; background: url(../img/handle-h.png) 50% 3px no-repeat; }
-
-#content textarea, #result iframe, body.editbox { min-width: 100px; width: 100%; height: 100%; line-height: 15px; font-family: "Monaco", "Andale Mono", "Lucida Console", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace; font-size: 12px; }
