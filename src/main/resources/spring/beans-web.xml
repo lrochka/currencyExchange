@@ -48,5 +48,6 @@ Irochka (afanasievaiv@ya.ru)
 	<bean id="messageSource"
 		class="org.springframework.context.support.ReloadableResourceBundleMessageSource"
 		p:basename="classpath:/spring/messages"
+		p:fileEncodings="UTF-8"
 		p:defaultEncoding="UTF-8"/>
 </beans>
