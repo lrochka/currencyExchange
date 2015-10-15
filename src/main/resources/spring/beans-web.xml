@@ -22,9 +22,16 @@ Irochka (afanasievaiv@ya.ru)
 		http://www.springframework.org/schema/mvc
 		http://www.springframework.org/schema/mvc/spring-mvc-3.1.xsd">
 	
-	<mvc:annotation-driven />
+	<mvc:annotation-driven>
+		<mvc:message-converters register-defaults="true">
+			<bean class="org.springframework.http.converter.StringHttpMessageConverter">
+				<property name="supportedMediaTypes" value = "text/plain; charset=UTF-8" />
+			</bean>
+		</mvc:message-converters>
+	</mvc:annotation-driven>
 
-<mvc:default-servlet-handler />	
+	<mvc:default-servlet-handler />
+	
 	<mvc:view-controller path="/" view-name="redirect:/login.html" />
 
 	<mvc:view-controller path="/login.html" />
@@ -40,5 +47,6 @@ Irochka (afanasievaiv@ya.ru)
 	
 	<bean id="messageSource"
 		class="org.springframework.context.support.ReloadableResourceBundleMessageSource"
-		p:basename="classpath:/spring/messages" />
+		p:basename="classpath:/spring/messages"
+		p:defaultEncoding="UTF-8"/>
 </beans>
