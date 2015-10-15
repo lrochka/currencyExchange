@@ -23,7 +23,8 @@ Irochka (afanasievaiv@ya.ru)
 		http://www.springframework.org/schema/mvc/spring-mvc-3.1.xsd">
 	
 	<mvc:annotation-driven />
-	
+
+<mvc:default-servlet-handler />	
 	<mvc:view-controller path="/" view-name="redirect:/login.html" />
 
 	<mvc:view-controller path="/login.html" />
