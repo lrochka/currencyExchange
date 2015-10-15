@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Context path="/" docBase="currencyExchange"
+<Context path="/" docBase="currencyexchange"
    crossContext="true" reloadable="true" debug="1">
     
 	<Resource name="jdbc/currencyexchange" 
