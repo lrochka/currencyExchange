@@ -100,7 +100,7 @@
 	
 	<error-page>
 		<exception-type>java.lang.Exception</exception-type>
-		<location>/accessdenied</location>
+		<location>/accessdenied.html</location>
 	</error-page>
   	
 </web-app>
