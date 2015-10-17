@@ -36,6 +36,7 @@ Irochka (afanasievaiv@ya.ru)
 		<intercept-url pattern="/images/**" filters="none" />
 		<!-- Get home page -->
 		<intercept-url pattern="/login.html" method="GET" access="permitAll" />
+		<intercept-url pattern="/accessdenied.html" method="GET" access="permitAll" />
 		<!-- This requires filtering for the controller test and taglib -->
 		<!-- Clients -->
 		<intercept-url pattern="/home.html" method="GET" access="isAuthenticated()" />

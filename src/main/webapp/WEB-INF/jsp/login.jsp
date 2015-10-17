@@ -16,13 +16,11 @@
 		<form class="main" action="${postLoginUrl}" method="post" accept-charset="UTF-8">
 			
 			<c:if test="${param.failed == true}">
-			<form:errors path="*">
 				<div class="warning alert">
 					Попытка войти не удалась. Пожалуйста, попробуйте еще раз или обратитесь к технической поддержке за помощью. 
-					<spring:message code="error.global" />
 				</div>
-			</form:errors>
 			</c:if>
+
 			<div class="panel grid" style="width:420px">
 				<div class="gridRow yui-gf">
 					<div class="fieldLabel yui-u first">Логин:</div>
