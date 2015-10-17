@@ -98,11 +98,9 @@
       <res-auth>Container</res-auth>
   	</resource-ref>
 	
-	<locale-encoding-mapping-list>
-		<locale-encoding-mapping>
-			<locale>uk</locale>
-			<encoding>uk_UA</encoding>
-		</locale-encoding-mapping>
-	</locale-encoding-mapping-list>
+	<error-page>
+		<exception-type>java.lang.Exception</exception-type>
+		<location>/accessdenied.html</location>
+	</error-page>
   	
 </web-app>
