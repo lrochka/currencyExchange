@@ -14,6 +14,6 @@ public class PortalController {
 	
 	// Use this instead of <mvc:view-controller> so we can handle all HTTP methods and not just GET. (Forwarding to the
 	// access denied page preserves the HTTP request method.)
-	@RequestMapping(value = "/accessdenied.html")
+	@RequestMapping(value = "/accessdenied", method = RequestMethod.GET)
 	public String getAccessDenied() { return "accessdenied"; }
 }

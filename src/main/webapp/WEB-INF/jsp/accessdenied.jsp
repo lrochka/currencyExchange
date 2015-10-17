@@ -11,8 +11,5 @@
 		<h1>Доступ запрещен!</h1>
 		<p>Извините, доступ запрещен.</p>
 		<p>${error}</p>
-		<form:errors path="*">
-				<div class="warning alert"><spring:message code="error.global" /></div>
-		</form:errors>
 	</body>
 </html>
