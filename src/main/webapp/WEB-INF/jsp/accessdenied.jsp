@@ -6,7 +6,6 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
 		<title>Доступ запрещен!</title>
-		<link rel="stylesheet" type="text/css" href="${forumsCssUrl}" />
 	</head>
 	<body>
 		<h1>Доступ запрещен!</h1>
