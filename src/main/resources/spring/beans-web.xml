@@ -27,7 +27,7 @@ Irochka (afanasievaiv@ya.ru)
 	<mvc:default-servlet-handler />
 	
 	<mvc:view-controller path="/" view-name="redirect:/login.html" />
-
+	<mvc:view-controller path="/j_spring_security_check" view-name="redirect:/login.html?failed=true" />
 	<mvc:view-controller path="/login.html" />
 	<mvc:view-controller path="/accessdenied.html" />
 	<mvc:view-controller path="/home.html" view-name="extras/home" />
