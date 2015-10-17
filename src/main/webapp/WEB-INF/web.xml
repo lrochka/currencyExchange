@@ -99,7 +99,8 @@
   	</resource-ref>
 	
 	<error-page>
-		<exception-type>java.lang.Exception</exception-type>
+		<!-- Uncaught exception -->
+		<error-code>500</error-code>
 		<location>/accessdenied.html</location>
 	</error-page>
   	
