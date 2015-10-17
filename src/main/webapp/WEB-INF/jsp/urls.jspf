@@ -10,4 +10,5 @@
 <c:url var="homeUrl" value="/home.html" />
 <c:url var="clientsUrl" value="/clients.html" />
 <c:url var="loginUrl" value="/login.html" />
+<c:url var="j_spring_security_check" value="/login.html" />
 <c:url var="logoutUrl" value="/j_spring_security_logout" />
