@@ -34,7 +34,7 @@ import ua.com.currencyexchange.domain.ClientTypeContact;
 import ua.com.currencyexchange.service.ClientService;
 
 /**
- * @author Irochka (afanasievaiv@ya.ru)
+ * @author Irochka 
  */
 @Service
 @Transactional(readOnly = true)

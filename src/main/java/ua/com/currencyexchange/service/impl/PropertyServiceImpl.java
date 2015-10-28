@@ -15,7 +15,7 @@ import ua.com.currencyexchange.service.PropertyService;
 import ua.com.currencyexchange.dao.PropertyDao;
 
 /**
- * @author Irochka (afanasievaiv@ya.ru)
+ * @author Irochka 
  */
 @Service
 @Transactional(readOnly = true)

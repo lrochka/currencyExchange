@@ -33,7 +33,7 @@ import ua.com.currencyexchange.domain.Role;
 import ua.com.currencyexchange.service.AccountService;
 
 /**
- * @author Irochka (afanasievaiv@ya.ru)
+ * @author Irochka 
  */
 @Service
 @Transactional(readOnly = true)

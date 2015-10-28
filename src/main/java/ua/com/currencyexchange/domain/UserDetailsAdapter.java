@@ -12,7 +12,7 @@ import org.springframework.security.core.authority.GrantedAuthorityImpl;
 import org.springframework.security.core.userdetails.UserDetails;
 
 /**
- * @author Irochka (afanasievaiv@ya.ru)
+ * @author Irochka 
  */
 @SuppressWarnings("serial")
 public class UserDetailsAdapter implements UserDetails {

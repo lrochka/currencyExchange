@@ -10,7 +10,7 @@ import org.springframework.validation.Errors;
 import ua.com.currencyexchange.domain.Account;
 
 /**
- * @author Irochka (afanasievaiv@ya.ru)
+ * @author Irochka 
  */
 public interface AccountService {
 

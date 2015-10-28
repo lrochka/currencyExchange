@@ -19,7 +19,7 @@ import javax.validation.constraints.Digits;
 import javax.validation.constraints.Size;
 
 /**
- * @author Irochka (afanasievaiv@ya.ru)
+ * @author Irochka 
  */
 @Entity
 @Table(name = "clients")

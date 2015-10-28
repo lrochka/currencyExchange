@@ -12,7 +12,7 @@ import ua.com.currencyexchange.dao.RoleDao;
 import ua.com.currencyexchange.domain.Role;
 
 /**
- * @author Irochka (afanasievaiv@ya.ru)
+ * @author Irochka 
  */
 @Repository
 public class HbnRoleDao extends AbstractHbnDao<Role> implements RoleDao {

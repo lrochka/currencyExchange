@@ -18,7 +18,7 @@ import org.springframework.util.ReflectionUtils;
 import ua.com.currencyexchange.dao.Dao;
 
 /**
- * @author Irochka (afanasievaiv@ya.ru)
+ * @author Irochka 
  */
 public abstract class AbstractHbnDao<T extends Object> implements Dao<T> {
 	@Inject private SessionFactory sessionFactory;

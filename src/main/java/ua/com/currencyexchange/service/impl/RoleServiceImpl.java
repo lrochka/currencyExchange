@@ -16,7 +16,7 @@ import ua.com.currencyexchange.service.RoleService;
 import ua.com.currencyexchange.dao.RoleDao;
 
 /**
- * @author Irochka (afanasievaiv@ya.ru)
+ * @author Irochka 
  */
 @Service
 @Transactional(readOnly = true)

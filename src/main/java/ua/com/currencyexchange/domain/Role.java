@@ -22,7 +22,7 @@ import javax.persistence.Transient;
 import org.springframework.security.core.GrantedAuthority;
 
 /**
- * @author Irochka (afanasievaiv@ya.ru)
+ * @author Irochka 
  */
 @SuppressWarnings("serial")
 @Entity

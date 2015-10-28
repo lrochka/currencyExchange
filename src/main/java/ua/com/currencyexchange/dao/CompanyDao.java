@@ -7,7 +7,7 @@ import ua.com.currencyexchange.domain.Company;
 import java.util.List;
 
 /**
- * @author Irochka (afanasievaiv@ya.ru)
+ * @author Irochka 
  */
 
 public interface CompanyDao {

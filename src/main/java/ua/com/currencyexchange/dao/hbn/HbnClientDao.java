@@ -24,7 +24,7 @@ import ua.com.currencyexchange.domain.ClientStatus;
 import ua.com.currencyexchange.domain.ClientTypeContact;
 
 /**
- * @author Irochka (afanasievaiv@ya.ru)
+ * @author Irochka 
  */
 @Repository
 public class HbnClientDao extends AbstractHbnDao<Client> implements ClientDao {

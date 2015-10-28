@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import ua.com.currencyexchange.service.CompanyService;
 
 /**
- * @author Irochka (afanasievaiv@ya.ru)
+ * @author Irochka 
  */
 @Controller
 @RequestMapping("/company")

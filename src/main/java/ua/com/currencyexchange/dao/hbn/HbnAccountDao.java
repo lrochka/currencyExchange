@@ -20,7 +20,7 @@ import ua.com.currencyexchange.domain.Account;
 import ua.com.currencyexchange.domain.UserDetailsAdapter;
 
 /**
- * @author Irochka (afanasievaiv@ya.ru)
+ * @author Irochka 
  */
 @Repository
 public class HbnAccountDao extends AbstractHbnDao<Account> implements AccountDao {

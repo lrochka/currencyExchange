@@ -12,7 +12,7 @@ import ua.com.currencyexchange.domain.Company;
 // import ua.com.currencyexchange.domain.UserDetailsAdapter;
 
 /**
- * @author Irochka (afanasievaiv@ya.ru)
+ * @author Irochka 
  */
 @Repository
 public class HbnCompanyDao extends AbstractHbnDao<Company> implements CompanyDao {

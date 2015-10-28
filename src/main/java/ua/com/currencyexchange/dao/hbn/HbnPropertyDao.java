@@ -11,7 +11,7 @@ import ua.com.currencyexchange.dao.PropertyDao;
 import ua.com.currencyexchange.domain.Property;
 
 /**
- * @author Irochka (afanasievaiv@ya.ru)
+ * @author Irochka 
  */
 @Repository
 public class HbnPropertyDao extends AbstractHbnDao<Property> implements PropertyDao {

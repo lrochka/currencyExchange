@@ -11,7 +11,7 @@ import org.springframework.stereotype.Repository;
 import ua.com.currencyexchange.dao.UserDetailsDao;
 
 /**
- * @author Irochka (afanasievaiv@ya.ru)
+ * @author Irochka 
  */
 @Repository
 public class JdbcUserDetailsDao implements UserDetailsDao {

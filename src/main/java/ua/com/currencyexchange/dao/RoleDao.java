@@ -9,7 +9,7 @@ import ua.com.currencyexchange.domain.Role;
 
 
 /**
- * @author Irochka (afanasievaiv@ya.ru)
+ * @author Irochka 
  */
 public interface RoleDao extends Dao<Role> {
 	

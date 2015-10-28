@@ -23,7 +23,7 @@ import ua.com.currencyexchange.domain.UserDetailsAdapter;
 import ua.com.currencyexchange.service.ClientService;
 import ua.com.currencyexchange.service.CompanyService;
 /**
- * @author Irochka (afanasievaiv@ya.ru)
+ * @author Irochka 
  */
 @Controller
 public class ClientController {

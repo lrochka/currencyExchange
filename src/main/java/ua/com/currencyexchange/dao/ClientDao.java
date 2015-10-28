@@ -9,7 +9,7 @@ import ua.com.currencyexchange.domain.Client;
 import ua.com.currencyexchange.dao.Dao;
 
 /**
- * @author Irochka (afanasievaiv@ya.ru)
+ * @author Irochka 
  */
 public interface ClientDao extends Dao<Client> {
 	

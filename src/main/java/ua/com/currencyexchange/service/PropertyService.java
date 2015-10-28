@@ -8,7 +8,7 @@ import java.util.List;
 import ua.com.currencyexchange.domain.Property;
 
 /**
- * @author Irochka (afanasievaiv@ya.ru)
+ * @author Irochka 
  */
 public interface PropertyService {
 

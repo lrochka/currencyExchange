@@ -21,7 +21,7 @@ import ua.com.currencyexchange.service.AccountService;
  * Adapts the <code>AccountService</code> and <code>UserDetailsDao</code> to the <code>UserDetailsService</code>
  * interface so Spring Security can use them as an authentication source.
  * 
- * @author Irochka (afanasievaiv@ya.ru)
+ * @author Irochka 
  */
 @Service("userDetailsService")
 @Transactional(readOnly = true)

@@ -15,7 +15,7 @@ import org.apache.commons.lang.builder.ToStringStyle;
 import org.hibernate.validator.constraints.ScriptAssert;
 
 /**
- * @author Irochka (afanasievaiv@ya.ru)
+ * @author Irochka 
  */
 // Requires scripting engine (e.g. Rhino included automatically with Java 6)
 /*@ScriptAssert.List({

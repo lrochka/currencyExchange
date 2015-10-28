@@ -43,7 +43,7 @@ import ua.com.currencyexchange.service.PropertyService;
 import ua.com.currencyexchange.service.RoleService;
 
 /**
- * @author Irochka (afanasievaiv@ya.ru)
+ * @author Irochka 
  */
 @Controller
 public class AccountController {

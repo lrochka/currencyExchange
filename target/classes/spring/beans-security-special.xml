@@ -6,7 +6,7 @@ beans-security-special.xml
 
 Copyright (c) 2015
 
-Irochka (afanasievaiv@ya.ru)
+Irochka
 ========================================================================================================================
 -->
 <beans:beans xmlns="http://www.springframework.org/schema/security"

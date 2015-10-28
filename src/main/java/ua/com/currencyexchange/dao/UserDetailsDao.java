@@ -7,7 +7,7 @@ package ua.com.currencyexchange.dao;
  * Supplements {@link ua.com.currencyexchange.service.AccountService} by providing a way to look up a user's password.
  * We need this to implement the {@link org.springframework.security.core.userdetails.UserDetailsService} interface.
  * 
- * @author Irochka (afanasievaiv@ya.ru)
+ * @author Irochka 
  */
 public interface UserDetailsDao {
 

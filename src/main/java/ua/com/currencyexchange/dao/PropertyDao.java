@@ -10,7 +10,7 @@ import java.util.List;
 import ua.com.currencyexchange.dao.Dao;
 
 /**
- * @author Irochka (afanaseivaiv@ya.ru)
+ * @author Irochka
  */
 public interface PropertyDao extends Dao<Property> {
 	

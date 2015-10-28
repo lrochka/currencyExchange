@@ -9,7 +9,7 @@ import ua.com.currencyexchange.domain.Account;
 import ua.com.currencyexchange.dao.Dao;
 
 /**
- * @author Irochka (afanasievaiv@ya.ru)
+ * @author Irochka 
  */
 public interface AccountDao extends Dao<Account> {
 	

@@ -10,7 +10,7 @@ import org.springframework.validation.Errors;
 import ua.com.currencyexchange.domain.Client;
 
 /**
- * @author Irochka (afanasievaiv@ya.ru)
+ * @author Irochka 
  */
 public interface ClientService {
 	boolean createClient(Client client, Errors errors);

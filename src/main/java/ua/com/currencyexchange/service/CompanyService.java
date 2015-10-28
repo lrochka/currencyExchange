@@ -8,7 +8,7 @@ import java.util.List;
 import ua.com.currencyexchange.domain.Company;
 
 /**
- * @author Irochka (afanasievaiv@ya.ru)
+ * @author Irochka 
  */
 
 public interface CompanyService {

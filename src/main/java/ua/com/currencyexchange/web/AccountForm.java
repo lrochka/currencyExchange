@@ -18,7 +18,7 @@ import org.hibernate.validator.constraints.ScriptAssert;
 import ua.com.currencyexchange.domain.Company;
 
 /**
- * @author Irochka (afanasievaiv@ya.ru)
+ * @author Irochka 
  */
 // Requires scripting engine (e.g. Rhino included automatically with Java 6)
 @ScriptAssert.List({

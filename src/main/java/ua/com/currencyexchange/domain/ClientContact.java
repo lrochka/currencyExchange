@@ -17,7 +17,7 @@ import javax.persistence.Table;
 import javax.persistence.Column;
 
 /**
- * @author Irochka (afanasievaiv@ya.ru)
+ * @author Irochka 
  */
 public class ClientContact {
 	
